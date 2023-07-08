@@ -57,6 +57,12 @@ $button-size: 30px;
             background-color: #fcdab3b0;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        border-width: 2px;
+        padding: 5px 20px;
+        font-size: 13px;
+    }
 }
 
 body {
@@ -183,6 +189,9 @@ body {
     /* .landing__main */
 
     &__main {
+        display: flex;
+        flex-direction: column;
+
         & > p {
             margin-bottom: 40px;
 
@@ -203,6 +212,7 @@ body {
 
     &__button {
         margin-top: 15px;
+        align-self: center;
         @include styled-button;
     }
 }
@@ -444,6 +454,10 @@ body {
 
 .time-line {
     margin-bottom: 167px;
+
+    @media screen and (max-width: 576px) {
+        margin-bottom: 120px;
+    }
     /* .time-line__container */
 
     &__container {
@@ -482,7 +496,11 @@ body {
 
         & tr > td:nth-child(2) {
             font-weight: 600;
-            padding-left: 75px;
+            padding-left: 50px;
+
+            @media screen and (max-width: 460px) {
+                padding-left: 30px;
+            }
         }
 
         & tr > td > a {
@@ -674,6 +692,10 @@ body {
         @media screen and (max-width: 991px) {
             padding: 45px 100px 30px 100px;
         }
+
+        @media screen and (max-width: 460px) {
+            padding: 20px 40px 30px 40px;
+        }
     }
 
     /* .pricing__item */
@@ -686,6 +708,11 @@ body {
         @media screen and (max-width: 991px) {
             font-size: 16px;
             line-height: 30px;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 13px;
+            line-height: 21px;
         }
 
         &--bought > span {
@@ -814,6 +841,10 @@ body {
         @media screen and (max-width: 991px) {
             gap: 20px;
         }
+
+        @media screen and (max-width: 576px) {
+            gap: 10px;
+        }
     }
 
     /* .footer__item */
@@ -827,6 +858,11 @@ body {
         @media screen and (max-width: 991px) {
             line-height: 20px;
             font-size: 13px;
+        }
+
+        @media screen and (max-width: 576px) {
+            line-height: 16px;
+            font-size: 10px;
         }
 
         white-space: nowrap;
