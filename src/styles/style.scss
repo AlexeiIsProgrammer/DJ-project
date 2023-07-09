@@ -1,5 +1,5 @@
 @use "scss-reset/reset";
-@import "./fonts/stylesheet.css";
+@import "../fonts/stylesheet.css";
 
 $maxWidth: 1920;
 @mixin adaptiv-font($pcSize, $mobSize) {
@@ -23,7 +23,7 @@ texture {
     z-index: -1;
 
     mix-blend-mode: soft-light;
-    background-image: url("./img/tekstura\ zerno.png");
+    background-image: url("../img/tekstura\ zerno.png");
 }
 
 $main-color: #f5933b;
@@ -87,7 +87,7 @@ body {
         width: 12px; /* ширина scrollbar */
     }
     &::-webkit-scrollbar-track {
-        background-image: url("./img/tekstura\ zerno.png");
+        background-image: url("../img/tekstura\ zerno.png");
         background-color: $main-color; /* цвет дорожки */
     }
     &::-webkit-scrollbar-thumb {
@@ -310,6 +310,11 @@ body {
     }
     &__item {
         position: relative;
+
+        & input[type="radio"] {
+            display: none;
+        }
+
         &::after {
             transition: 0.3s ease;
             content: "";
@@ -327,10 +332,13 @@ body {
             }
             cursor: pointer;
         }
-        &.active {
+        &:has(input[type="radio"]:checked) {
             &::after {
                 width: 100%;
             }
+        }
+
+        & span {
         }
     }
 }
@@ -648,7 +656,7 @@ body {
                 content: "";
                 width: 14px;
                 height: 14px;
-                background-image: url("./img/icons/dote.svg");
+                background-image: url("../img/icons/dote.svg");
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
 
@@ -706,7 +714,7 @@ body {
     &__list {
         display: flex;
         flex-direction: column;
-        background-image: url("./img/elements/price-border.png");
+        background-image: url("../img/elements/price-border.png");
         background-repeat: no-repeat;
         background-size: contain;
 

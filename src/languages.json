@@ -1,0 +1,42 @@
+{
+    "eng": {
+        "landing__hint": "cozy daytime electronic music and art festival",
+        "landing__main p:nth-child(1)": "We would like to invite you to our first one-day festival dzënik in Warsaw, which will take place on July 15th.",
+        "landing__main p:nth-child(2)": "Starting at 10 am, ending at 10 pm.",
+        "landing__main p:nth-child(3)": "We have found a new venue: the renovated summer terrace of the Odessa Club.",
+        "landing__button": "buy a ticket",
+        "gallery__name": "Our goal is to remind you how important it is to take care of yourself.",
+        "gallery__hint": "We aim to change the idea of the party format and show that the daytime event format is the future. <br> We will create an atmosphere that will remainin your memory.",
+        "time-line__name": "time-line:",
+        "program__description": "Morning kundalini yoga with live from Stereometrix , dance class from Bounce of Nature , art exhibition, tea room, vegan food, non-alcoholic and alcoholic beverages are waiting for you.",
+        "program__name": "program:",
+        "program__button": "registration",
+        "pricing .pricing__item:nth-child(1) .pricing__name": "list of early birds:",
+        "pricing .pricing__item:nth-child(2) .pricing__name": "first release:",
+        "pricing .pricing__item:nth-child(3) .pricing__name": "final release:",
+        "pricing .pricing__item:nth-child(5) .pricing__name": "at the entrance:",
+        "pricing__button": "buy a ticket",
+        "memories__paragraph": "short aftermovie from сфера° weekend (2021)",
+        "footer__list .footer__item:nth-child(2) > a": "summer terrace <br> Odessa Club <br> (Kolejowa 8c)"
+    },
+    "bel": {
+        "landing__hint": "утульны дзённы фестываль электроннай музыкі і мастацтва",
+        "landing__main p:nth-child(1)": "Мы хацелі б запрасіць вас на наш першы аднадзённы фестываль dzënik у Варшаве, які адбудзецца 15 ліпеня.",
+        "landing__main p:nth-child(2)": "Пачатак у 10 раніцы, сканчэнне ў 10 вечара.",
+        "landing__main p:nth-child(3)": "Мы знайшлі новае месца правядзення: адрамантаваную летнюю тэрасу Адэскага клуба.",
+        "landing__button": "купіць білет",
+        "gallery__name": "Наша мэта - нагадаць вам, як важна клапаціцца пра сябе.",
+        "gallery__hint": "Мы імкнемся змяніць уяўленне аб фармаце вечарынак і паказаць, што за дзённым фарматам мерапрыемстваў будучыня. <br> Мы створым атмасферу, якая застанецца ў вашай памяці.",
+        "time-line__name": "часавая шкала:",
+        "program__description": "Morning kundalini yoga ужывую ад Stereometrix , танцавальны клас ад Bounce of Nature , мастацкая выстава, чайны пакой, веганская ежа, безалкагольныя і алкагольныя напоі чакаюць вас.",
+        "program__name": "праграма:",
+        "program__button": "рэгістрацыя",
+        "pricing .pricing__item:nth-child(1) .pricing__name": "cпіс ранніх птушак:",
+        "pricing .pricing__item:nth-child(2) .pricing__name": "першы выпуск:",
+        "pricing .pricing__item:nth-child(3) .pricing__name": "апошнi выпуск",
+        "pricing .pricing__item:nth-child(5) .pricing__name": "ля ўваходу:",
+        "pricing__button": "купіць білет",
+        "memories__paragraph": "кароткаметражны фільм пасля сфера° weekend (2021)",
+        "footer__list .footer__item:nth-child(2) > a": "летняя тэраса <br> Odessa Club <br> (Kolejowa 8c)"
+    }
+}
