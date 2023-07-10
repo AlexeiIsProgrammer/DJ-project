@@ -1,3 +1,3 @@
 import './index.html'
 import './styles/style.scss'
-import './js/localization'
+import './localization.js'

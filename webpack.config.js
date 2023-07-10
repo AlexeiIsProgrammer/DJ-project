@@ -4,10 +4,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); //Плагин для 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); //Плагин для CSS
 const mode = process.env.NODE_ENV || 'development'; //указание среды разработки ()
 
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const package = require('./package.json');
+
 const devMode = mode === 'development'; // Проверка мода на девелопмент
 
 const target = devMode ? 'web' : 'browserslist'; // Если development, то web настройки, если продакшн, то файл browserslistrc
 const devtool = devMode ? 'source-map' : undefined; // При дев моде, будет source-map для отслежиания ошибок 
+
+function modify(buffer) {
+    let manifest = JSON.parse(buffer.toString());
+
+    manifest.version = package.version;
+
+    manifest_JSON = JSON.stringify(manifest, null, 2);
+    return manifest_JSON;
+}
 
 module.exports = {
     mode, //Мод (дев или прод)
@@ -73,7 +85,19 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
-        })
+        }),
+        new CopyWebpackPlugin(
+            {
+                patterns: [
+                    {
+                        from: "./src/languages.json",
+                        to: "./languages.json",
+                        transform(content, path) {
+                            return modify(content)
+                        }
+                    }
+                ]
+            })
     ]
 };
 
